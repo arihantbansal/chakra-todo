@@ -2,6 +2,7 @@
 	"name": "chakra-todo",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "http://arihantbansal.github.io/chakra-todo",
 	"dependencies": {
 		"@chakra-ui/react": "^1.6.5",
 		"@emotion/react": "^11.4.0",
