@@ -48,7 +48,7 @@ const App = () => {
 				mb="8"
 				fontWeight="extrabold"
 				size="2xl"
-				bgGradient="linear(to-r, pink.500, pink.300, blue.500)"
+				bgGradient="linear(to-r, #007CF0, #00DFD8)"
 				bgClip="text"
 				style={{ marginBottom: "16px" }}>
 				Todo Application
