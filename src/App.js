@@ -42,7 +42,7 @@ const App = () => {
 				Todo Application
 			</Heading>
 			<TodoList todos={todos} deleteTodo={deleteTodo} />
-			<AddTodo />
+			<AddTodo addTodo={addTodo} />
 		</VStack>
 	);
 };
