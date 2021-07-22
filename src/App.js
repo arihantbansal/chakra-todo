@@ -21,6 +21,10 @@ const App = () => {
 		setTodos(todos.filter(todo => todo.id !== id));
 	};
 
+	const addTodo = todo => {
+		setTodos([...todos, todo]);
+	};
+
 	return (
 		<VStack p={4}>
 			<IconButton
@@ -37,7 +41,7 @@ const App = () => {
 				bgClip="text">
 				Todo Application
 			</Heading>
-			<TodoList todos={todos} />
+			<TodoList todos={todos} deleteTodo={deleteTodo} />
 			<AddTodo />
 		</VStack>
 	);
