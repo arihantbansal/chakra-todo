@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/chakra-todo/static/js/main.be9a2298.chunk.js",
+    "main.js.map": "/chakra-todo/static/js/main.be9a2298.chunk.js.map",
+    "runtime-main.js": "/chakra-todo/static/js/runtime-main.d2f72cf0.js",
+    "runtime-main.js.map": "/chakra-todo/static/js/runtime-main.d2f72cf0.js.map",
+    "static/js/2.fc2e0bde.chunk.js": "/chakra-todo/static/js/2.fc2e0bde.chunk.js",
+    "static/js/2.fc2e0bde.chunk.js.map": "/chakra-todo/static/js/2.fc2e0bde.chunk.js.map",
+    "index.html": "/chakra-todo/index.html",
+    "static/js/2.fc2e0bde.chunk.js.LICENSE.txt": "/chakra-todo/static/js/2.fc2e0bde.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2f72cf0.js",
+    "static/js/2.fc2e0bde.chunk.js",
+    "static/js/main.be9a2298.chunk.js"
+  ]
+}
