@@ -5,6 +5,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 const App = () => {
+	// eslint-disable-next-line
 	const initialTodos = [
 		{
 			id: 1,
