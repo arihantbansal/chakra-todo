@@ -1,7 +1,7 @@
-import { Heading, VStack, IconButton } from "@chakra-ui/react";
+import { Heading, VStack, IconButton, useColorMode } from "@chakra-ui/react";
 import TodoList from "./components/TodoList";
 import AddTodo from "./components/AddTodo";
-import { FaSun } from "react-icons/fa";
+import { FaSun, FaMoon } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 const App = () => {
@@ -15,9 +15,12 @@ const App = () => {
 			body: "get butter",
 		},
 	];
+
 	const [todos, setTodos] = useState(
 		() => JSON.parse(localStorage.getItem("todos")) || []
 	);
+
+	const { colorMode, toggleColorMode } = useColorMode();
 
 	useEffect(() => {
 		localStorage.setItem("todos", JSON.stringify(todos));
@@ -34,10 +37,11 @@ const App = () => {
 	return (
 		<VStack p={4}>
 			<IconButton
-				icon={<FaSun />}
+				icon={colorMode === "light" ? <FaSun /> : <FaMoon />}
 				isRound="true"
 				size="lg"
 				alignSelf="flex-end"
+				onClick={toggleColorMode}
 			/>
 			<Heading
 				mb="8"
