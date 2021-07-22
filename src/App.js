@@ -15,7 +15,13 @@ const App = () => {
 			body: "get butter",
 		},
 	];
-	const [todos, setTodos] = useState(initialTodos);
+	const [todos, setTodos] = useState(
+		() => JSON.parse(localStorage.getItem("todos")) || []
+	);
+
+	useEffect(() => {
+		localStorage.setItem("todos", JSON.stringify(todos));
+	}, [todos]);
 
 	const deleteTodo = id => {
 		setTodos(todos.filter(todo => todo.id !== id));
