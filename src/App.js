@@ -49,7 +49,8 @@ const App = () => {
 				fontWeight="extrabold"
 				size="2xl"
 				bgGradient="linear(to-r, pink.500, pink.300, blue.500)"
-				bgClip="text">
+				bgClip="text"
+				style={{ marginBottom: "16px" }}>
 				Todo Application
 			</Heading>
 			<TodoList todos={todos} deleteTodo={deleteTodo} />
